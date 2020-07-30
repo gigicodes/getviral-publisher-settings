@@ -176,28 +176,32 @@
          </nav>
       </header>
       <div class="container-fluid py-3 mobile-upload">
-         <form class="header-form position-relative mx-auto mt-3 mb-2">
+         <!-- <form class="header-form position-relative mx-auto mt-3 mb-2">
             <input class="header-form__input form-control px-3 py-2 bg-transparent text-white" type="text" placeholder="Search payment history">
             <div class="header-form__icon position-absolute">
                <img src="./assets/images/" alt="">
             </div>
+         </form> -->
+          <!-- Small screens search bar -->
+          <form class="d-md-none mobile-search my-2">
+            <input type="text" class="mobile-search__input" placeholder="Search payment history">
+            <svg class="dashboard-icon mobile-search__icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.84769 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.84769 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.84769 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
+               <path d="M19.762 18.6122L15.1007 13.9509C14.7831 13.6333 14.2687 13.6333 13.9511 13.9509C13.6335 14.2683 13.6335 14.7832 13.9511 15.1005L18.6124 19.7618C18.7711 19.9206 18.979 20 19.1872 20C19.395 20 19.6031 19.9206 19.762 19.7618C20.0796 19.4444 20.0796 18.9295 19.762 18.6122Z" fill="#B5B5B5"/>
          </form>
          <div class="settings-heading position-relative">
            <h4 class="mt-5 text-center text-white">Settings</h4>
            <button style="border: none" class="bg-transparent position-absolute arrow"><img src="assets/images/Group.svg" class="img-fluid" alt="arrow"></button>
          </div>
          <div class="mt-4 mb-5 text-center">
-           <img src="assets/images/Ellipse 1.svg" alt="" class="img-fluid">
+           <span class="image-wrapper">
+            <img src="assets/images/Ellipse 1.svg" alt="" class="img-fluid big-img">
+            <img src="/assets/images/ic_sharp-verified.svg" alt="" class="small-img">
+           </span>
          </div>
       </div>
       <section class="container-fluid container-custom">
-         <!-- Small screens search bar -->
-         <form class="d-md-none mobile-search my-2">
-            <input type="text" class="mobile-search__input" placeholder="search">
-            <svg class="dashboard-icon mobile-search__icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.84769 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.84769 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.84769 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z" fill="#B5B5B5"/>
-               <path d="M19.762 18.6122L15.1007 13.9509C14.7831 13.6333 14.2687 13.6333 13.9511 13.9509C13.6335 14.2683 13.6335 14.7832 13.9511 15.1005L18.6124 19.7618C18.7711 19.9206 18.979 20 19.1872 20C19.395 20 19.6031 19.9206 19.762 19.7618C20.0796 19.4444 20.0796 18.9295 19.762 18.6122Z" fill="#B5B5B5"/>
-         </form>
+        
          <!-- Plug your mark up here -->
          <p class="text-justify">
             <!--Main panel-->
@@ -211,7 +215,7 @@
                      <h5 class="mb-4">Notifications</h5>
                      <div class="row mt-3">
                         <div class="col-8">
-                           <p>Include me in searches for advertisers</p>
+                           <p>Include me in searches for publishers</p>
                         </div>
                         <div class="col-4 d-flex">
                            <label class="switch d-block d-sm-none">
@@ -224,7 +228,7 @@
                      </div>
                      <div class="row mt-3">
                         <div class="col-8">
-                           <p>Allow publishers to contact me directly</p>
+                           <p>Allow advertisers to contact me directly</p>
                         </div>
                         <div class="col-4 d-flex">
                            <label class="switch d-block d-sm-none">
@@ -286,11 +290,10 @@
  
 
   <!-- JS, Popper.js, and jQuery -->
+  <script src="/assets/js/jquery.js"></script>
   <script src="/assets/js/bootstrap.js"></script>
   <script src="/assets/js/popper.js"></script>
-  <script src="/assets/js/jquery.js"></script>
   <!--Custom JS-->
   <script src="./assets/js/main.js"></script>
-  <script src="assets/js/settings.js"></script>
 </body>
 </html>

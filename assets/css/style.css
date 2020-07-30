@@ -13,6 +13,10 @@
     color: var(--primary-color);
     text-decoration: none;
   }
+  .mobile-search__input {
+    outline: none;
+    color: #ffffff;
+  }
   /*Buttons*/
   .btn-primary {
     background: var(--primary-color);
@@ -66,7 +70,7 @@
     position: relative;
   }
   .big-img {
-    
+  
   }
   small.img {
     position: absolute;
@@ -139,3 +143,4 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  
