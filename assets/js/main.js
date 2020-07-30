@@ -13,3 +13,6 @@ const openSidebarBtn  = document.querySelector('#open-sidebar');
       closeSidebarBtn.classList.add('d-md-block');
       openSidebarBtn.classList.remove('d-md-block')
    })
+   var element = jQuery('.mobile-search').clone();
+element.appendTo('.search');
+

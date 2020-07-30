@@ -132,56 +132,36 @@
                         </svg>
                                              
                   </button>
-                  
-                  <!-- <div class="row align-items-center">
-                     <div class="col-md-4">      
-                        <ul class="list-unstyled pt-3 d-flex align-items-center justify-content-between">
-                           <li><a class="header__link" href="#">Account</a></li>
-                           <li><a class="header__link" href="#">Profile</a></li>
-                           <li class="header__link-list-active"><a class="header__link header__link-active" href="#">Settings</a></li>
-                        </ul>
-                     </div>
-                     <div class="col-md-5">
-                        <form class="header-form position-relative ml-auto">
-                           <input class="header-form__input form-control px-3 py-2" type="text" placeholder="Search payment history">
-                           <div class="header-form__icon position-absolute">
-                              <img src="./assets/images/search icon.svg" alt="">
-                           </div>
-                        </form>
-                     </div>
-                     <div class="col-md-3">
-                        <div class="d-flex justify-content-end align-items-center">
-                           <img class="img-fluid profile-picture pr-2" src="./assets/images/profile picture.png" alt="">
-                           <div class="dropdown show">
-                              <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Irish Kelvin
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#">Edit Profile</a>
-                              <a class="dropdown-item" href="#">Sign out</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div> -->
-                  <!-- <div class="d-none d-md-block">
-                     <div class="d-flex justify-content-end align-items-center">
-                        <img class="img-fluid profile-picture pr-2" src="./assets/images/profile picture.svg" alt="">
-                        <span>Joshua</span>
-                     </div>
-                  </div> -->
+                  <!-- nav-links -->
+                  <div class="d-none d-md-block" style="margin-left: 40px;">
+                     <ul class="list-unstyled pt-3 d-flex align-items-center">
+                       <li>
+                         <a href="#" class="header__link ">Edit profile</a>
+                       </li>
+ 
+                       <li class="header__link-list-active" style="margin-left: 20px;">
+                         <a href="#" class="header__link header__link-active">Settings</a>
+                       </li>
+                       
+                    </ul>
+                   </div>
+ 
+                   <div class="d-none d-md-block" style="margin-left: auto;">
+                      <div class="d-flex justify-content-end align-items-center">
+                         <img class="img-fluid profile-picture pr-2" src="./assets/images/profile picture.svg" alt="">
+                         <span style="font-weight: 600; font-size: 20px;">Irish Kelvin</span>
+                      </div>
+                   </div>
                </div>
                
             </div>
          </nav>
       </header>
+      <div class="container-fluid">
+         <div class="search d-md-none my-2">
+         </div>
+      </div>
       <div class="container-fluid py-3 mobile-upload">
-         <!-- <form class="header-form position-relative mx-auto mt-3 mb-2">
-            <input class="header-form__input form-control px-3 py-2 bg-transparent text-white" type="text" placeholder="Search payment history">
-            <div class="header-form__icon position-absolute">
-               <img src="./assets/images/" alt="">
-            </div>
-         </form> -->
           <!-- Small screens search bar -->
           <form class="d-md-none mobile-search my-2">
             <input type="text" class="mobile-search__input" placeholder="Search payment history">
@@ -194,10 +174,10 @@
            <button style="border: none" class="bg-transparent position-absolute arrow"><img src="assets/images/Group.svg" class="img-fluid" alt="arrow"></button>
          </div>
          <div class="mt-4 mb-5 text-center">
-           <span class="image-wrapper">
+           <div class="image-wrapper">
             <img src="assets/images/Ellipse 1.svg" alt="" class="img-fluid big-img">
             <img src="/assets/images/ic_sharp-verified.svg" alt="" class="small-img">
-           </span>
+           </div>
          </div>
       </div>
       <section class="container-fluid container-custom">
@@ -246,10 +226,10 @@
                         <div class="col-4 d-flex">
                            <label class="switch d-block d-sm-none">
                               <input type="checkbox" checked>
-                              <span class="slider slider--2 round"></span>
+                              <span class="slider round"></span>
                            </label>
-                           <button class="btn btn-notification btn-notification--2 px-4 d-none d-sm-block mr-2">Yes</button>
-                           <button class="btn btn-notification btn-notification--3 px-4 d-none d-sm-block">No</button>
+                           <button class="btn btn-notification px-4 d-none d-sm-block mr-2">Yes</button>
+                           <button class="btn btn-notification btn-notification--2 px-4 d-none d-sm-block">No</button>
                         </div>
                      </div>
                   </div>
@@ -291,8 +271,8 @@
 
   <!-- JS, Popper.js, and jQuery -->
   <script src="/assets/js/jquery.js"></script>
-  <script src="/assets/js/bootstrap.js"></script>
   <script src="/assets/js/popper.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
   <!--Custom JS-->
   <script src="./assets/js/main.js"></script>
 </body>
