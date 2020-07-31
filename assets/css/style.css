@@ -35,7 +35,6 @@
   content: "";
   display: block;
   width: 80px;
-  bottom: 10px;
   position: absolute;
   border-bottom: 4px solid #362f74;
 }
@@ -45,6 +44,9 @@
     border: 1px solid var(--primary-color);
     font-size: 1rem;
     font-weight: 600;
+  }
+  .btn-primary:hover {
+    background-color: #2c284f;
   }
   .btn-notification {
     background: var(--notification);
@@ -90,23 +92,15 @@
     }
   }
   /* verification badge for mobile profile */
-  /* .image-wrapper {
+  .image-wrapper {
     position: relative;
     left: 0;
-    top: 0; */
-  }
-  .big-img {
-    position: absolute;
-    left: 0;
     top: 0;
-    z-index: 1;
   }
-  small.img {
-    position: absolute;
-    right: 10%;
-    top: 10%;
-    z-index: 2;
-
+  .verify-icon {
+    fill: var(--notification);
+    top: 0%;
+    right: 0%;
   }
   /*settings heading arrow button*/
   .arrow {
