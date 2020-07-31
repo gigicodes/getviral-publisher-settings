@@ -17,12 +17,11 @@
     outline: none;
     color: #ffffff;
   }
-  /* ADDED NAV LINKS */
+  /* Nav Links */
 .header__link-active {
   font-weight: 600;
   color: #362f74 !important;
 }
-
 .header__link {
   color: #333333;
   font-size: 20px;
